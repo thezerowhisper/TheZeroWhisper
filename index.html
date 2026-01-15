@@ -15,137 +15,62 @@
   <meta property="og:title" content="Daily Affirmations & Meditation | The Zero Whisper">
   <meta property="og:description" content="Discover powerful affirmations and calming meditations to reprogram your mind for peace and success.">
   <meta property="og:url" content="https://thezerowhisper.github.io/TheZeroWhisper/">
-  <meta property="og:image" content="https://thezerowhisper.github.io/TheZeroWhisper/assets/logo.jpg"> <script type="application/ld+json">
+  <meta property="og:image" content="https://thezerowhisper.github.io/TheZeroWhisper/assets/logo.jpg">
+
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "The Zero Whisper",
     "url": "https://thezerowhisper.github.io/TheZeroWhisper/",
-    "logo": "https://thezerowhisper.github.io/TheZeroWhisper/assets/logo.jpg",
-    "sameAs": [
-      "https://www.youtube.com/@TheZeroWhisper"
-    ],
-    "description": "A peaceful space for calm, clarity, and inner transformation through affirmations and meditation."
+    "sameAs": [ "https://www.youtube.com/@TheZeroWhisper" ]
   }
   </script>
 
   <style>
-    :root {
-      --primary-color: #4a90e2; /* Calming Blue */
-      --secondary-color: #2c3e50; /* Dark Slate */
-      --bg-color: #f9fbfd; /* Very light blue-grey */
-      --card-bg: #ffffff;
-    }
-
-    body {
-      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg-color);
-      color: #333;
-      line-height: 1.8;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background: var(--card-bg);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      border-radius: 10px;
-    }
-
-    h1 {
-      color: var(--secondary-color);
-      font-size: 2.2rem;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: var(--primary-color);
-      font-size: 1.5rem;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-      margin-top: 30px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-
-    ul {
-      list-style-type: none; /* Remove bullets */
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 10px;
-      padding-left: 0;
-    }
-
-    /* Beautiful Links */
-    a {
-      color: var(--primary-color);
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
-    a:hover {
-      color: #2c3e50;
-      text-decoration: underline;
-    }
-
-    /* Video Embed Container (Makes YouTube Responsive) */
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-      height: 0;
-      overflow: hidden;
-      border-radius: 10px;
-      margin: 20px 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* YouTube Button styling */
-    .cta-button {
-      display: inline-block;
-      background-color: #cc0000; /* YouTube Red */
-      color: white !important;
-      padding: 12px 24px;
-      border-radius: 50px;
-      font-size: 1.1rem;
-      text-decoration: none !important;
-      margin-top: 15px;
-      text-align: center;
-      transition: background-color 0.3s;
-    }
+    :root { --primary: #4a90e2; --secondary: #2c3e50; --bg: #f9fbfd; --white: #ffffff; }
+    body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: #333; line-height: 1.8; margin: 0; padding: 0; }
     
-    .cta-button:hover {
-      background-color: #990000;
-    }
+    .container { max-width: 800px; margin: 40px auto; padding: 20px; background: var(--white); box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 10px; }
+    
+    h1 { color: var(--secondary); font-size: 2.2rem; text-align: center; margin-bottom: 10px; }
+    h2 { color: var(--primary); font-size: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+    p { font-size: 1.1rem; color: #555; }
+    
+    /* Links & Buttons */
+    a { color: var(--primary); text-decoration: none; font-weight: 600; }
+    a:hover { color: #2c3e50; text-decoration: underline; }
 
-    .center-text {
-      text-align: center;
+    .library-button {
+      display: inline-block;
+      background-color: #f0f4f8;
+      color: #333;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      transition: all 0.2s;
     }
+    .library-button:hover { background-color: #e2e8f0; text-decoration: none; border-color: #ccc; }
 
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-    }
+    /* Video Embed */
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin: 20px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+    /* YouTube Button */
+    .cta-button { display: inline-block; background-color: #cc0000; color: white !important; padding: 12px 24px; border-radius: 50px; font-size: 1.1rem; text-decoration: none !important; margin-top: 15px; text-align: center; }
+    .cta-button:hover { background-color: #990000; }
+
+    .center-text { text-align: center; }
+
+    /* Footer Styling (Matches other pages) */
+    .footer-section { background-color: #f4f6f8; padding: 30px; border-radius: 10px; margin-top: 40px; }
+    .footer-columns { display: flex; flex-wrap: wrap; gap: 20px; }
+    .footer-col { flex: 1; min-width: 200px; }
+    .footer-col h4 { color: #555; border-bottom: 2px solid #ddd; padding-bottom: 5px; margin-top: 0; }
+    .footer-col ul { list-style: none; padding: 0; }
+    .footer-col li { margin-bottom: 8px; }
   </style>
 </head>
 
@@ -158,23 +83,26 @@
 
     <p>
       Welcome to <strong>The Zero Whisper</strong> — a peaceful space for calm, clarity, and inner transformation.
-      Here you’ll find powerful daily affirmations, positive mindset practices, and short guided meditation sessions
-      designed to relax your mind, reduce stress, and reprogram your subconscious for peace, success, and abundance.
+      Here you’ll find powerful daily affirmations, positive mindset practices, and short guided meditation sessions.
     </p>
 
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/8nH3UjjkRgQ" 
-              title="The Zero Whisper Meditation" frameborder="0" 
+      <iframe src="https://www.youtube.com/embed/INSERT_YOUR_VIDEO_ID_HERE" 
+              title="The Zero Whisper Featured Video" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
       </iframe>
     </div>
 
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="affirmations.html" class="library-button">📂 Browse Affirmations Library</a>
+      <a href="meditations.html" class="library-button">🧘 Browse Meditation Library</a>
+    </div>
+
     <h2>Mindfulness & Inner Peace</h2>
     <p>
       Our content is designed to support mental wellness, emotional balance, and daily mindfulness.
-      Whether you’re starting your morning, taking a short break, or preparing for sleep,
-      these affirmations and meditations help you reconnect with calm and positivity.
+      Check out our most popular sessions below:
     </p>
 
     <ul>
@@ -185,16 +113,6 @@
       <li>🧘 <strong>10 Minute Meditation:</strong> Sessions for quick relaxation</li>
     </ul>
 
-    <h2>Explore Our Libraries</h2>
-    <ul>
-      <li>▶ <a href="morning-affirmations.html">Morning Affirmations</a></li>
-      <li>▶ <a href="positive-affirmations.html">Positive Affirmations</a></li>
-      <li>▶ <a href="self-love-affirmations.html">Self Love Affirmations</a></li>
-      <li>▶ <a href="abundance-affirmations.html">Abundance Affirmations</a></li>
-      <li>▶ <a href="guided-meditation.html">Guided Meditation for Calm & Inner Peace</a></li>
-      <li>▶ <a href="10-minute-meditation.html">10 Minute Meditation for Instant Calm</a></li>
-    </ul>
-  
     <div class="center-text" style="margin-top: 40px; background-color: #f0f4f8; padding: 20px; border-radius: 10px;">
       <h2>Watch on YouTube</h2>
       <p>
@@ -206,12 +124,36 @@
       </a>
     </div>
 
-    <footer>
-      <p>
-        &copy; The Zero Whisper. Creating affirmation and meditation content to support calm living,
-        mindfulness, emotional healing, and inner peace.
-      </p>
-    </footer>
+    <div class="footer-section">
+      <h3 style="margin-top: 0; color: #333;">Explore The Zero Whisper Library</h3>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Affirmations</h4>
+          <ul>
+            <li>☀️ <a href="morning-affirmations.html">Morning Energy</a></li>
+            <li>🌙 <a href="sleep-affirmations.html">Sleep & Rest</a></li>
+            <li>💰 <a href="abundance-affirmations.html">Wealth & Success</a></li>
+            <li>💖 <a href="self-love-affirmations.html">Self Love</a></li>
+            <li>✨ <a href="positive-affirmations.html">Positive Mindset</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Meditations</h4>
+          <ul>
+            <li>⏱️ <a href="10-minute-meditation.html">10-Minute Quick Calm</a></li>
+            <li>🧘 <a href="guided-meditation.html">Deep Guided Journey</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li>🏠 <a href="index.html">Home</a></li>
+            <li>📺 <a href="https://www.youtube.com/@TheZeroWhisper" target="_blank">YouTube Channel</a></li>
+          </ul>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 30px; font-size: 0.9em; color: #888;">&copy; 2026 The Zero Whisper.</p>
+    </div>
 
   </div>
 
