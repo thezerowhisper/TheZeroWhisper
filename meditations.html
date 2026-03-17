@@ -3,67 +3,256 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guided Meditation Library | The Zero Whisper</title>
-  <meta name="description" content="A collection of guided meditations for stress relief, inner peace, and spiritual growth.">
-  
+
+  <!-- ═══ PRIMARY SEO ═══ -->
+  <title>Meditation for Sleep & Deep Relaxation | The Zero Whisper</title>
+  <meta name="description" content="Can't sleep? Mind racing at night? These guided meditation sessions are designed specifically for bedtime relaxation — using gentle voice, sleep frequencies, and body scan techniques to help you fall asleep naturally.">
+  <link rel="canonical" href="https://thezerowhisper.github.io/TheZeroWhisper/meditations.html">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="The Zero Whisper">
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Meditation for Sleep & Deep Relaxation | The Zero Whisper">
+  <meta property="og:description" content="Guided meditations for bedtime and deep relaxation. Calm your racing mind and fall asleep naturally with The Zero Whisper.">
+  <meta property="og:url" content="https://thezerowhisper.github.io/TheZeroWhisper/meditations.html">
+  <meta property="og:site_name" content="The Zero Whisper">
+  <meta property="og:image" content="https://thezerowhisper.github.io/TheZeroWhisper/assets/logo.png">
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Meditation for Sleep & Deep Relaxation | The Zero Whisper">
+  <meta name="twitter:description" content="Guided meditations for bedtime. Calm your racing mind and fall asleep naturally.">
+  <meta name="twitter:image" content="https://thezerowhisper.github.io/TheZeroWhisper/assets/logo.png">
+
+  <!-- ═══ SCHEMA: BreadcrumbList ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thezerowhisper.github.io/TheZeroWhisper/" },
+      { "@type": "ListItem", "position": 2, "name": "Meditation for Sleep & Relaxation", "item": "https://thezerowhisper.github.io/TheZeroWhisper/meditations.html" }
+    ]
+  }
+  </script>
+
+  <!-- ═══ SCHEMA: FAQPage ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can meditation really help you fall asleep?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Guided sleep meditation works by activating the parasympathetic nervous system and gradually lowering brainwave frequency from the alert Beta state into Alpha, and then toward Theta — the threshold of sleep. A consistent pre-sleep meditation practice of 10–20 minutes is associated with faster sleep onset, fewer night-time awakenings, and better subjective sleep quality, particularly for those with anxiety-driven insomnia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a body scan meditation and how does it help with sleep?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A body scan is a guided technique in which you systematically move your attention through different parts of the body — typically from the feet upward — noticing and releasing tension as you go. Because chronic stress is physically stored in muscle groups (particularly the jaw, neck, shoulders, and hips), a body scan meditation physically unwinds the accumulated tension of the day, making it one of the most effective tools for pre-sleep relaxation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I use headphones for sleep meditation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Headphones produce the best results if you are using sessions with binaural beats, as these require separate audio channels for each ear. However, for pure voice-guided sleep meditations without binaural beats, a phone speaker on low volume beside the bed works well and avoids the discomfort of earbuds while lying down. Wireless sleep headphones or pillow speakers are also excellent options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between sleep affirmations and sleep meditation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sleep meditation focuses on relaxing the nervous system so you can fall asleep — it is about releasing the day. Sleep affirmations, played at low volume while you drift off, work by delivering positive statements to the subconscious mind as it crosses the threshold into sleep. Both are valuable: use meditation to fall asleep, and affirmations to gently reprogram while you rest."
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
-    :root { --primary: #4a90e2; --secondary: #2c3e50; --bg: #f9fbfd; --white: #ffffff; }
+    :root {
+      --primary: #4a90e2;
+      --secondary: #2c3e50;
+      --bg: #f9fbfd;
+      --white: #ffffff;
+      --accent-bg: #eef4fc;
+    }
+    * { box-sizing: border-box; }
     body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: #333; line-height: 1.8; margin: 0; padding: 0; }
-    .container { max-width: 800px; margin: 40px auto; padding: 20px; background: var(--white); box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 10px; }
-    h1 { color: var(--secondary); font-size: 2rem; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-    p { font-size: 1.1rem; color: #555; }
-    a { color: var(--primary); text-decoration: none; font-weight: 600; }
+    .container { max-width: 800px; margin: 40px auto; padding: 40px; background: var(--white); box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 10px; }
+    h1 { color: var(--secondary); font-size: 2.2rem; border-bottom: 2px solid #eee; padding-bottom: 20px; }
+    h2 { color: var(--primary); font-size: 1.6rem; margin-top: 40px; }
+    h3 { font-size: 1.3rem; margin-top: 25px; color: #444; }
+    p  { font-size: 1.15rem; color: #555; margin-bottom: 20px; }
+    li { margin-bottom: 10px; font-size: 1.1rem; color: #555; }
+    a  { color: var(--primary); text-decoration: none; font-weight: 600; }
     a:hover { text-decoration: underline; }
     .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
-    
-    .category-card { background: #f9fbfd; padding: 20px; border-radius: 10px; margin-bottom: 20px; border-left: 5px solid #8e44ad; }
-    .category-card h3 { margin-top: 0; }
 
-    .footer-section { background-color: #f4f6f8; padding: 30px; border-radius: 10px; margin-top: 40px; }
+    .category-card { background: var(--accent-bg); padding: 25px; border-radius: 10px; margin-bottom: 25px; border-left: 5px solid #8e44ad; transition: transform 0.2s, box-shadow 0.2s; }
+    .category-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+    .category-card h3 { margin-top: 0; color: var(--secondary); }
+    .card-meta { display: flex; gap: 12px; font-size: 0.9rem; color: #888; flex-wrap: wrap; margin-bottom: 8px; }
+
+    /* Tip grid */
+    .tip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin: 25px 0; }
+    .tip-card { background: var(--accent-bg); border-radius: 8px; padding: 15px; font-size: 0.95rem; color: #555; }
+    .tip-card strong { display: block; color: var(--primary); margin-bottom: 5px; font-size: 0.9rem; }
+
+    /* FAQ */
+    .faq-section { margin-top: 50px; }
+    .faq-item { border-bottom: 1px solid #eee; padding: 18px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { font-size: 1.1rem; font-weight: 700; color: var(--secondary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: none; border: none; width: 100%; text-align: left; padding: 0; }
+    .faq-question::after { content: '+'; font-size: 1.4rem; color: var(--primary); flex-shrink: 0; margin-left: 12px; }
+    .faq-question[aria-expanded="true"]::after { content: '−'; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-answer p { margin: 10px 0 0; font-size: 1.05rem; color: #666; }
+
+    /* Footer */
+    .footer-section { background-color: #f4f6f8; padding: 30px; border-radius: 10px; margin-top: 60px; }
     .footer-columns { display: flex; flex-wrap: wrap; gap: 20px; }
     .footer-col { flex: 1; min-width: 200px; }
     .footer-col h4 { color: #555; border-bottom: 2px solid #ddd; padding-bottom: 5px; margin-top: 0; }
     .footer-col ul { list-style: none; padding: 0; }
     .footer-col li { margin-bottom: 8px; }
+    @media (max-width: 600px) { .container { padding: 20px; margin: 10px; } h1 { font-size: 1.6rem; } }
   </style>
 </head>
-
 <body>
-
   <div class="container">
-    <div class="breadcrumb">
-      <a href="index.html">🏠 Home</a> &gt; <span>Meditation Library</span>
-    </div>
 
-    <h1>The Meditation Lounge</h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">🏠 Home</a> &gt; <span>Meditation for Sleep &amp; Relaxation</span>
+    </nav>
+
+    <h1>The Meditation Lounge: Sleep &amp; Deep Relaxation</h1>
 
     <p>
-      Find your center. Whether you have 10 minutes or an hour, our guided meditations are here to bring you back to peace.
+      The mind that won't quiet down at bedtime is not broken — it is overtrained. Decades of constant stimulation, notification pings, and performance pressure have taught the nervous system to stay perpetually on alert, even when the day is technically over.
+    </p>
+    <p>
+      These sessions work with your body's own sleep architecture, not against it. By gently lowering brainwave frequency from Beta (alert) to Alpha (relaxed) to Theta (the edge of sleep), guided meditation creates the internal conditions for natural, restorative sleep — without medication, without willpower, and without fighting your own mind.
     </p>
 
-    <div style="margin-top: 30px;">
+    <h2>Choose Your Relaxation Session</h2>
 
-      <div class="category-card" style="border-left-color: #8e44ad;">
-        <h3><a href="10-minute-meditation.html">⏱️ 10-Minute Reset</a></h3>
-        <p>Quick stress relief for busy schedules. Calm your mind instantly.</p>
+    <div class="category-card" style="border-left-color: #2980b9;">
+      <div class="card-meta">
+        <span>⏰ 10 minutes</span>
+        <span>🎯 Quick mental reset</span>
+        <span>⚡ Alpha brainwaves</span>
       </div>
-
-      <div class="category-card" style="border-left-color: #2980b9;">
-        <h3><a href="guided-meditations.html">🧘 Deep Guided Journey</a></h3>
-        <p>Longer sessions for spiritual growth, deep relaxation, and finding clarity.</p>
-      </div>
-
+      <h3><a href="10-minute-meditation.html">⏱️ 10-Minute Reset — Fast Calm for Busy Minds</a></h3>
+      <p>When your mind has too many tabs open, this short session acts as a forceful browser refresh. Uses paced breathing, binaural Alpha beats, and a brief body tension scan to bring you from stressed to settled in a single sprint.</p>
+      <p><strong>Best for:</strong> Pre-sleep wind-down when you have limited time, or decompressing after a particularly draining day before a longer session.</p>
+      <a href="10-minute-meditation.html">▶ Start 10-Minute Session →</a>
     </div>
 
-    <div class="footer-section">
+    <div class="category-card" style="border-left-color: #8e44ad;">
+      <div class="card-meta">
+        <span>⏰ 20 minutes</span>
+        <span>🎯 Deep anxiety release</span>
+        <span>🌊 Theta brainwaves</span>
+      </div>
+      <h3><a href="20-minute-meditation.html">🧘 20-Minute Deep Healing Journey</a></h3>
+      <p>The deeper option for evenings when anxiety feels body-level, not just mental. Guides you through a full progressive body scan, emotional release, and a Theta-state visualisation — emerging with the kind of heavy, peaceful relaxation that makes sleep feel inevitable rather than effortful.</p>
+      <p><strong>Best for:</strong> Evenings with chronic anxiety, processing emotionally heavy days, or establishing a serious pre-sleep practice.</p>
+      <a href="20-minute-meditation.html">▶ Start 20-Minute Session →</a>
+    </div>
+
+    <h2>Setting Up the Perfect Sleep Meditation Environment</h2>
+    <p>
+      The physical environment is not a luxury — it is a direct input into how quickly the nervous system will shift. A few consistent signals train the brain to associate a specific space and routine with sleep onset.
+    </p>
+
+    <div class="tip-grid">
+      <div class="tip-card">
+        <strong>📱 Screens Off First</strong>
+        Stop all screen use at least 10 minutes before starting. Blue light delays melatonin release, directly postponing sleep onset.
+      </div>
+      <div class="tip-card">
+        <strong>🌡️ Cool the Room</strong>
+        Core body temperature must drop to initiate sleep. A room between 18–20°C (65–68°F) is the sweet spot for most adults.
+      </div>
+      <div class="tip-card">
+        <strong>🎧 Audio Setup</strong>
+        Headphones work best for binaural sessions. For pure voice sessions, a phone on low volume beside the bed also works — earbuds lying down can be uncomfortable.
+      </div>
+      <div class="tip-card">
+        <strong>🛏️ Lie Flat</strong>
+        Savasana position (flat on back, arms slightly away from the body, palms up) allows the deepest muscular release. A pillow under the knees reduces lower back tension.
+      </div>
+      <div class="tip-card">
+        <strong>💡 Darkness</strong>
+        An eye mask signals the pineal gland to begin melatonin production, deepening the natural sleep drive within minutes.
+      </div>
+      <div class="tip-card">
+        <strong>🔁 Consistency</strong>
+        Using the same session at the same time each night conditions a Pavlovian association between the audio and sleep. Within 1–2 weeks, the opening seconds alone trigger drowsiness.
+      </div>
+    </div>
+
+    <h2>Sleep Meditation vs Sleep Affirmations: Using Both</h2>
+    <p>
+      These two tools work at different depths and combine powerfully in sequence. Sleep meditation relaxes the nervous system and gets you to the threshold of sleep. <a href="sleep-affirmations.html">Sleep affirmations</a>, played at low volume as you drift off, work by delivering positive statements to the subconscious mind as the critical conscious mind dissolves. The Theta state you enter while falling asleep is the same state that makes the subconscious most receptive — making it the ideal window for affirmation-based reprogramming.
+    </p>
+    <p>
+      <strong>The optimal sequence:</strong> 20-minute meditation to relax → drift into sleep → sleep affirmation track running quietly in the background as you sleep.
+    </p>
+
+    <!-- ══ FAQ ══ -->
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq1">Can meditation really help you fall asleep?</button>
+        <div class="faq-answer" id="faq1" role="region">
+          <p>Yes. Guided sleep meditation activates the parasympathetic nervous system and lowers brainwave frequency from alert Beta into Alpha, then toward the Theta threshold of sleep. Consistent pre-sleep meditation practice is associated with faster sleep onset, fewer night-time awakenings, and better sleep quality — particularly for anxiety-driven insomnia.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq2">What is a body scan meditation and how does it help with sleep?</button>
+        <div class="faq-answer" id="faq2" role="region">
+          <p>A body scan guides your attention systematically through different parts of the body, noticing and releasing tension as you go. Chronic stress is physically stored in muscle groups — particularly the jaw, neck, shoulders, and hips. A body scan unwinds this accumulated tension, making it one of the most effective tools for pre-sleep relaxation.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq3">Should I use headphones for sleep meditation?</button>
+        <div class="faq-answer" id="faq3" role="region">
+          <p>Headphones produce the best results for binaural beat sessions, as these require separate audio channels. For pure voice-guided sessions, a phone speaker on low volume beside the bed works well and avoids the discomfort of earbuds while lying down. Wireless sleep headphones or under-pillow speakers are also excellent for regular use.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq4">What is the difference between sleep affirmations and sleep meditation?</button>
+        <div class="faq-answer" id="faq4" role="region">
+          <p>Sleep meditation focuses on relaxing the nervous system so you can fall asleep — it is about releasing the day. Sleep affirmations, played at low volume while you drift off, deliver positive statements to the subconscious as it crosses the sleep threshold. Use meditation to fall asleep, and affirmations to gently reprogram while you rest.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
       <h3 style="margin-top: 0; color: #333;">Explore The Zero Whisper Library</h3>
       <div class="footer-columns">
         <div class="footer-col">
           <h4>Affirmations</h4>
           <ul>
             <li>☀️ <a href="morning-affirmations.html">Morning Energy</a></li>
-            <li>🌙 <a href="sleep-affirmations.html">Sleep & Rest</a></li>
-            <li>💰 <a href="abundance-affirmations.html">Wealth & Success</a></li>
+            <li>🌙 <a href="sleep-affirmations.html">Sleep &amp; Rest</a></li>
+            <li>💰 <a href="abundance-affirmations.html">Wealth &amp; Success</a></li>
             <li>💖 <a href="self-love-affirmations.html">Self Love</a></li>
             <li>✨ <a href="positive-affirmations.html">Positive Mindset</a></li>
           </ul>
@@ -71,21 +260,38 @@
         <div class="footer-col">
           <h4>Meditations</h4>
           <ul>
-            <li>⏱️ <a href="10-minute-meditation.html">10-Minute Quick Calm</a></li>
-            <li>🧘 <a href="guided-meditations.html">Deep Guided Journey</a></li>
+            <li>⏱️ <a href="10-minute-meditation.html">10-Minute Reset</a></li>
+            <li>🧘 <a href="20-minute-meditation.html">20-Minute Deep Dive</a></li>
+            <li>📚 <a href="guided-meditations.html">Full Library</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Connect</h4>
           <ul>
             <li>🏠 <a href="index.html">Home</a></li>
-            <li>📺 <a href="https://www.youtube.com/@TheZeroWhisper" target="_blank">YouTube Channel</a></li>
+            <li>📺 <a href="https://www.youtube.com/@TheZeroWhisper" target="_blank" rel="noopener">YouTube Channel</a></li>
           </ul>
         </div>
       </div>
       <p style="text-align: center; margin-top: 30px; font-size: 0.9em; color: #888;">&copy; 2026 The Zero Whisper.</p>
-    </div>
-
+    </footer>
   </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-question').forEach(function(b) {
+          b.setAttribute('aria-expanded', 'false');
+          document.getElementById(b.getAttribute('aria-controls')).style.maxHeight = '0';
+        });
+        if (!expanded) {
+          this.setAttribute('aria-expanded', 'true');
+          var answer = document.getElementById(this.getAttribute('aria-controls'));
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
